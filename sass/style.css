@@ -28,6 +28,12 @@ p {
   margin: 5px 0 10px;
 }
 
+p2 {
+  font-size: 18px;
+  margin: 5px 0 10px;
+  color: silver;
+}
+
 .bold {
   font-weight: 700;
 }
@@ -47,6 +53,17 @@ h2 {
     color: #848484;
     font-weight: 700;
   }
+}
+
+h4 {
+  display: block;
+  font-size: 1.17em;
+  margin-block-start: 1em;
+  margin-block-end: 1em;
+  margin-inline-start: 0px;
+  margin-inline-end: 0px;
+  font-weight: bold;
+  color: whitesmoke
 }
 
 img {
@@ -74,7 +91,7 @@ img {
   position: -webkit-sticky;
   position: sticky;
   top: 0;
-  background-color: #000000;
+  background-color: #ffffff;
 }
 
 @media screen and (min-width: 1250px) {
@@ -289,7 +306,7 @@ img {
 #about .about-container-left {
   -ms-flex-preferred-size: 40%;
       flex-basis: 40%;
-  background: #DEF0FF;
+  background: #2A7F62;
   padding: 30px 15px;
 }
 
@@ -324,8 +341,8 @@ img {
 }
 
 #skill {
-  background-color: #7f53ac;
-  background-image: linear-gradient(315deg, #7f53ac 0%, #647dee 74%);
+  background-color: #2A7F62;
+  background-image: linear-gradient(315deg, #2A7F62 0%, #01200F 74%);
 }
 
 #skill .skill--content {
@@ -353,7 +370,7 @@ img {
 
 #skill .skill--content .left h2 {
   font-size: 36px;
-  color: #222;
+  color: #ffffff;
 }
 
 #skill .skill--content .right {
@@ -377,12 +394,12 @@ img {
   -ms-flex-preferred-size: 32%;
       flex-basis: 32%;
   text-align: center;
-  border: 1px solid #222;
+  border: 1px solid #c0c0c0;
   padding: 30px 15px;
   margin-bottom: 30px;
   border-width: 5px 5px 5px 5px;
-  -o-border-image: linear-gradient(45deg, #ff9800 0%, purple 100%);
-     border-image: linear-gradient(45deg, #ff9800 0%, purple 100%);
+  -o-border-image: linear-gradient(45deg, #2B4570 0%, silver 100%);
+     border-image: linear-gradient(45deg, #2B4570 0%, silver 100%);
   border-image-slice: 9;
   border-style: solid;
 }
@@ -423,7 +440,7 @@ img {
   -ms-flex-preferred-size: 32%;
       flex-basis: 32%;
   text-align: center;
-  border: 1px solid #E9EBEC;
+  border: 1px solid #000000;
   padding: 20px 10px 40px;
   margin-bottom: 30px;
   -webkit-transition: background-color 0.8s ease-in;
@@ -447,42 +464,11 @@ img {
   margin: 0 auto;
 }
 
-#service .service--content .item p {
-  font-style: italic;
-  display: block;
-  margin-bottom: 30px;
-  text-shadow: 0 1px 2px #222;
-}
-
-#service .service--content .item a {
-  border: 1px solid #7f53ac;
-  border-radius: 4px;
-  padding: 10px 30px;
-  color: #FFF;
-  text-decoration: none;
-  text-transform: uppercase;
-  font-weight: 700;
-  letter-spacing: 1.3px;
-  -webkit-transition: all 0.8s ease-in-out;
-  transition: all 0.8s ease-in-out;
-  background-color: #9921e8;
-  background-image: linear-gradient(315deg, #9921e8 0%, #5f72be 74%);
-}
-
-#service .service--content .item a:hover {
-  background-color: #7f5a83;
-  background-image: linear-gradient(315deg, #7f5a83 0%, #0d324d 74%);
-  border: #0d324d;
-}
-
-#service .item:hover {
-  background-color: #DEF0FF;
-}
 
 #portfolio {
   z-index: 1;
-  background-color: #923cb5;
-  background-image: linear-gradient(147deg, #923cb5 0%, #000000 74%);
+  background-color: #01200F;
+  background-image: linear-gradient(147deg, #2A7F62  0%, #01200F 74%);
 }
 
 #portfolio h2 {
@@ -506,7 +492,7 @@ img {
   -ms-flex-preferred-size: 50%;
       flex-basis: 50%;
   position: relative;
-  background-color: #cb2027;
+  background-color: #000000;
   -webkit-transition: all 0.8s ease-in-out;
   transition: all 0.8s ease-in-out;
 }
@@ -541,121 +527,6 @@ img {
   opacity: 0.3;
 }
 
-#testimonial h2 {
-  max-width: 1200px;
-  display: block;
-  margin: 0 auto 30px auto;
-}
-
-#testimonial .testimonial--content {
-  display: block;
-}
-
-@media screen and (min-width: 768px) {
-  #testimonial .testimonial--content {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-pack: justify;
-        -ms-flex-pack: justify;
-            justify-content: space-between;
-    -ms-flex-wrap: wrap;
-        flex-wrap: wrap;
-    -webkit-box-align: start;
-        -ms-flex-align: start;
-            align-items: flex-start;
-  }
-}
-
-#testimonial .testimonial--content .item {
-  -ms-flex-preferred-size: 45%;
-      flex-basis: 45%;
-  margin: 15px 0;
-}
-
-blockquote {
-  margin: 0;
-}
-
-blockquote p {
-  padding: 15px;
-  background: #DEF0FF;
-  border-radius: 5px;
-}
-
-blockquote p::before {
-  content: '\201C';
-}
-
-blockquote p::after {
-  content: '\201D';
-}
-
-#pricing {
-  background-color: #DEF0FF;
-}
-
-#pricing .pricing--content {
-  display: block;
-  max-width: 1600px;
-  margin: 0 auto;
-}
-
-@media screen and (min-width: 768px) {
-  #pricing .pricing--content {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-pack: justify;
-        -ms-flex-pack: justify;
-            justify-content: space-between;
-  }
-}
-
-#pricing .pricing--content .item {
-  -ms-flex-preferred-size: 32%;
-      flex-basis: 32%;
-  border: 1px solid #848484;
-  border-radius: 3px;
-  padding: 20px 10px 30px;
-  margin-bottom: 30px;
-}
-
-@media screen and (min-width: 768px) {
-  #pricing .pricing--content .item {
-    margin-bottom: 0;
-  }
-}
-
-#pricing .pricing--content .item .price {
-  font-size: 36px;
-  color: #cb2027;
-  font-weight: 700;
-}
-
-#pricing .pricing--content .item img {
-  max-width: 200px;
-  height: auto;
-  display: block;
-  margin: 0 auto;
-}
-
-#pricing .pricing--content .item .description {
-  font-style: italic;
-  min-height: 60px;
-  display: block;
-  margin: 20px 0;
-}
-
-#pricing .pricing--content .item a {
-  padding: 10px 20px;
-  font-weight: 700;
-  text-transform: uppercase;
-  border: 1px solid #222;
-  text-decoration: none;
-  color: #FFF;
-  background: #222;
-}
 
 #contact .contact-detail, #contact address {
   max-width: 800px;
@@ -701,8 +572,8 @@ blockquote p::after {
 .social-share a {
   width: 50px;
   height: 50px;
-  background-color: #DEF0FF;
-  border: 1px solid #7f53ac;
+  background-color: #ffffff;
+  border: 1px solid #000000;
   -webkit-transition: background-color 0.8s ease-in;
   transition: background-color 0.8s ease-in;
   display: -webkit-box;
@@ -753,8 +624,8 @@ blockquote p::after {
 }
 
 .site-footer .site-footer--content .footer-left {
-  -ms-flex-preferred-size: 55%;
-      flex-basis: 55%;
+  -ms-flex-preferred-size: 10%;
+      flex-basis: 10%;
 }
 
 .site-footer .site-footer--content .footer-left p {
